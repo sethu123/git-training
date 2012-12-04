@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=1024, user-scalable=no">
-<title> Git </title>
+<title>Your deck.js Presentation</title>
 
 <!-- Required stylesheet -->
 <link rel="stylesheet" href="core/deck.core.css">
-<link rel="stylesheet" href="assets/deckjs-theme-mozilla/sandstone.css">
+
 <!-- Extension CSS files go here. Remove or add as needed. -->
 <link rel="stylesheet" href="extensions/goto/deck.goto.css">
 <link rel="stylesheet" href="extensions/menu/deck.menu.css">
@@ -165,21 +165,57 @@
   <span class="slide"> You will always see 40 char strings running around as you start using git
   <pre> 
   <code> 24b9da6552252987aa493b52f8696cd6d3b00373 </code>
+   </pre>
+  </span>
+  <div> <a href="http://git-scm.com/book/ch9-2.html"> http://git-scm.com/book/ch9-2.html </a> <a href="http://alblue.bandlem.com/2011/08/git-tip-of-week-objects.html"> http://alblue.bandlem.com/2011/08/git-tip-of-week-objects.html </a> </div>
+</section>
+<section class="slide">
+  <h2> The three stages </h2>
+  <img src="assets/images/the-three-stages.png" /> </section>
+
+<!-- Installing git -->
+
+<section class="slide">
+  <h2> Installing git </h2>
+  <a href="http://msysgit.github.com/"> http://msysgit.github.com/ </a> </section>
+<section class="slide">
+  <h2> Tell git who you are </h2>
+  <pre> <code> 
      	 $ git config --global user.name "Sethunath K M"
 		 $ git config --global user.email sethunath_km@ispg.in
      </code> </pre>
+  <div class="slide">
+    <h3> check the current configuration </h3>
+    <pre> <code> 
      	 $ git config --list
      </code> </pre>
   </div>
 </section>
 <section class="slide">
   <h2> Start your project </h2>
+  <div class="slide">
     <h3> 1. Create a new project </h3>
     <pre> <code> 
 			git init
      </code> </pre>
+  </div>
+  <div class="slide">
+    <h3> 2. or clone an existing project </h3>
+    <pre> <code> 
      	 $ git clone file:////node3/bdp.git
      </code> </pre>
+  </div>
+  <div class="slide"> Git stores the metadata in a .git directory in your project directory </div>
+</section>
+<section class="slide">
+  <h3> Staging data </h3>
+  <pre> <code> git add test.html </code> </pre>
+  <h3> Commiting the changes </h3>
+  <pre> <code> git commit </code> </pre>
+</section>
+<section class="slide">
+  <h2> git commands </h2>
+  <pre> <code> 
 		git commit - commits the changes
         git commit -m "test" - adds the message and commit
         git commit -a - adds the file and commits
@@ -188,6 +224,10 @@
        
     </code>
     </pre>
+</section>
+<section class="slide">
+  <h2> git commands </h2>
+  <pre> <code> 
     	git status - shows the current status 
         git diff - shows the diff between the current working directory and staged data
         git diff --cached - shows the diff between the current staged data and revision head
@@ -197,6 +237,10 @@
         
     </code>
     </pre>
+</section>
+<section class="slide">
+  <h2> git commands </h2>
+  <pre> <code> 
     	git log - shows a log
         git log --graph - shows a graphical log
         git log boilerplate.html - shows log for a file
@@ -205,6 +249,10 @@
         
     </code>
     </pre>
+</section>
+<section class="slide">
+  <h2> git commands </h2>
+  <pre> <code> 
     	git log - shows a log
         git log --graph - shows a graphical log
         git log boilerplate.html - shows log for a file
@@ -216,6 +264,10 @@
         git blame boilerplate.html - who changed what and when      
     </code>
     </pre>
+</section>
+<section class="slide">
+  <h2> git commands </h2>
+  <pre> <code> 
         git show e48c27fe78c49080464cf449cb5cc80a0654b42e - shows a particular revision
         git show e48c27fe78c49080464cf449cb5cc80a0654b42e:boilerplate.html - shows a particular revision
         
@@ -225,45 +277,14 @@
         git checkout e48c27fe78c49080464cf449cb5cc80a0654b42e boilerplate.html - checkout a file from a particular commit   
     </code>
     </pre>
- </section>
- 
- <section class="slide">
- 	<h2> And for the Gui Guys </h2>
-	<pre> <code> 
+</section>
+<section class="slide">
+  <h2> And for the Gui Guys </h2>
+  <pre> <code> 
         gitk
     </code>
     </pre>
- </section>
- 
- <section class="slide">
- 	<h2> Git workflows </h2>
-    <div class="slide" style="width:600px;display:inline-block;float:left">
-    	<h3> Central shared repository </h3> 
-    	<img src="assets/images/workflow-central.png" />
-    </div>
-    <div class="slide" style=" width:600px;display:inline-block;float:left">
-    	<h3> Integration manager </h3> 
-    	<img src="assets/images/workflow-im.png" />
-    </div>
- </section>
- 
- <section class="slide">
- 	<h2> Github </h2>
-	<img src="assets/images/github.png" />
- </section>
- 
- <section class="slide">
- 	<h2> Learning More </h2>
-	<ul> 
-    <li> <a href="http://learn.github.com/"> http://learn.github.com/ </a> </li>
-    <li> <a href="http://learn.github.com/"> http://learn.github.com/ </a> </li>
-    </ul>
- </section>
 </section>
-<div style="display:none"> 
-
-http://git-scm.com/book/en
-</div>
 <section class="slide">
   <h1>Git Branching</h1>
 </section>
