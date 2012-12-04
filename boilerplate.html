@@ -147,6 +147,60 @@
   <div> <img src="assets/images/distributedvcs.png"  /> </div>
 </section>
 
+<section class="slide">
+  <h2> Git stores Snapshots, Not Differences </h2>
+  <h3> CVS, Subversion, Perforce, Bazaar </h3>
+  <div> <img src="assets/images/differences.png"  /> </div>
+</section>
+<section class="slide">
+  <h2> Git stores Snapshots, Not Differences </h2>
+  <h3> Git </h3>
+  <div> <img src="assets/images/snapshots.png"  /> </div>
+</section>
+<section class="slide">
+  <h2> Nearly Every Operation Is Local </h2>
+  You wont always need Bijumon
+</section>
+<section class="slide">
+  <h2> Git Has Integrity </h2>
+  <h3> Everything in Git is check-summed before it is stored and is then referred to by that checksum. </h3>
+  <span class="slide"> You will always see 40 char strings running around as you start using git <pre> 
+  <code> 24b9da6552252987aa493b52f8696cd6d3b00373 </code>
+   </pre> </span>
+   <div>
+    <a href="http://git-scm.com/book/ch9-2.html"> http://git-scm.com/book/ch9-2.html </a>
+    <a href="http://alblue.bandlem.com/2011/08/git-tip-of-week-objects.html"> http://alblue.bandlem.com/2011/08/git-tip-of-week-objects.html   </a>
+  </div>
+ </section> 
+ <section class="slide">
+ 	 <h2> The three stages </h2>
+     <img src="assets/images/the-three-stages.png" />
+ </section> 
+ 
+ <!-- Installing git -->
+ 
+ <section class="slide">
+ 	 <h2> Installing git </h2>
+     <a href="http://msysgit.github.com/"> http://msysgit.github.com/ </a>
+ </section> 
+ 
+  <section class="slide">
+ 	 <h2> Tell git who you are </h2>
+     <pre> <code> 
+     	 $ git config --global user.name "Sethunath K M"
+		 $ git config --global user.email sethunath_km@ispg.in
+     </code> </pre>
+     <div class="slide"> 
+     	<h3> check the current configuration </h3>
+        <pre> <code> 
+     	 $ git config --list
+     </code> </pre>
+     </div>
+ </section> 
+
+</section>
+
+
 <!-- End slides. --> 
 
 <!-- Begin extension snippets. Add or remove as needed. --> 
