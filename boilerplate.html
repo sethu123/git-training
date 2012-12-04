@@ -227,19 +227,46 @@
  <section class="slide">
  	<h2> git commands </h2>
 	<pre> <code> 
+		git commit - commits the changes
+        git commit -m "test" - adds the message and commit
+        git commit -a - adds the file and commits
+        git commit --amend edit the previous commit
+    	git status - shows the current status 
+       
+    </code>
+    </pre>
+ </section>
+ 
+ <section class="slide">
+ 	<h2> git commands </h2>
+	<pre> <code> 
     	git status - shows the current status 
         git diff - shows the diff between the current working directory and staged data
         git diff --cached - shows the diff between the current staged data and revision head
         git diff 48c27fe78c49080464cf449cb5cc80a0654b42e - shows the diff between the current working data and a particular revision
         git diff --cached e48c27fe78c49080464cf449cb5cc80a0654b42e - shows the diff between the current staged data and a particular revision
-        git diff ID1 ID2 - diff between two revisions
+        git diff ID1 ID2 - diff between two revisions      
         
-        git commit - commits the changes
-        git commit -m "test" - adds the message and commit
-        git commit -a - adds the file and commits
-        git commit --amend edit the previous commit
+    </code>
+    </pre>
+ </section>
+ 
+ <section class="slide">
+ 	<h2> git commands </h2>
+	<pre> <code> 
+    	git log - shows a log
+        git log --graph - shows a graphical log
+        git log boilerplate.html - shows log for a file
+        git log -p boilerplate.html - shows log with patches 
+              
         
-        git log - shows a log
+    </code>
+    </pre>
+ </section>
+  <section class="slide">
+ 	<h2> git commands </h2>
+	<pre> <code> 
+    	git log - shows a log
         git log --graph - shows a graphical log
         git log boilerplate.html - shows log for a file
         git log -p boilerplate.html - shows log with patches 
@@ -247,21 +274,32 @@
         git rm - removes a file from git being tracked
         git rm --cached - removes a file from staging area
         
-        git blame boilerplate.html - who changed what and when
-        
+        git blame boilerplate.html - who changed what and when      
+    </code>
+    </pre>
+ </section>
+ 
+   <section class="slide">
+ 	<h2> git commands </h2>
+	<pre> <code> 
         git show e48c27fe78c49080464cf449cb5cc80a0654b42e - shows a particular revision
         git show e48c27fe78c49080464cf449cb5cc80a0654b42e:boilerplate.html - shows a particular revision
         
         git reset --hard - resets the files to last commit ( HEAD )
         git reset --hard e48c27fe78c49080464cf449cb5cc80a0654b42e  - resets the files to particular commit ( HEAD )
         
-        git revert e48c27fe78c49080464cf449cb5cc80a0654b42e - revert to  a particular commit 
-        
-        
+        git checkout e48c27fe78c49080464cf449cb5cc80a0654b42e boilerplate.html - checkout a file from a particular commit   
     </code>
     </pre>
  </section>
  
+    <section class="slide">
+ 	<h2> And for the Gui Guys </h2>
+	<pre> <code> 
+        gitk
+    </code>
+    </pre>
+ </section>
 </section>
 
 
